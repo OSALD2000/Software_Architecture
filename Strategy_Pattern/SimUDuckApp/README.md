@@ -1,4 +1,4 @@
-## SimUDuck-App
+## SimUDuckApp
 
 ---
     Entwickeln ein Programm die folgendes kann:
