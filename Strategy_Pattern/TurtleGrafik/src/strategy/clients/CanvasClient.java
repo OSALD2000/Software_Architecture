@@ -5,6 +5,12 @@ import TurtleGrafik.src.strategy.TurtleRendererStrategy;
 public class CanvasClient implements TurtleRendererStrategy
 {
     @Override
+    public void render()
+    {
+
+    }
+
+    @Override
     public void drawLine(int x1, int y1, int x2, int y2)
     {
 

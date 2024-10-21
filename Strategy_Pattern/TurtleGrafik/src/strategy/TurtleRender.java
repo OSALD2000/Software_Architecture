@@ -19,6 +19,11 @@ public class TurtleRender
         this.client = client;
     }
 
+    public void start()
+    {
+        this.client.render();
+    }
+
     public void drawLine(int x1, int y1, int x2, int y2)
     {
         client.drawLine(x1, y1, x2, y2);
