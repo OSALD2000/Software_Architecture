@@ -19,7 +19,7 @@ public class TurtleRender
         this.client = client;
     }
 
-    public void start()
+    public void render()
     {
         this.client.render();
     }
