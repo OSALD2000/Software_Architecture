@@ -20,7 +20,7 @@ public class Druker
 
     public synchronized void print(String client, String pdf)
     {
-        int timeNeeded = (int) (Math.random() * 10000);
+        int timeNeeded = (int) (Math.random() * 1000);
         System.out.println("client: " + client + " printing pdf: " + pdf + " time: " + timeNeeded+ " ms");
 
         try {
