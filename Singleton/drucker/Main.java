@@ -1,4 +1,6 @@
-import example.src.Druker;
+package drucker;
+
+import drucker.example.src.Druker;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package example.src;
+package drucker.example.src;
 
 public class Druker
 {
