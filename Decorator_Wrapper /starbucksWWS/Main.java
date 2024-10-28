@@ -10,8 +10,8 @@ public class Main
 
     public static void main(String[] args)
     {
-        Beverage caffee = new Caffee();
-        Beverage newCaffe = caffee.add(Milch.class).add(Mokka.class);
+        Caffee caffee = new Caffee();
+        Beverage newCaffe = caffee.add(Milch.class).add(Mokka.class).add(Milch.class).add(Mokka.class);
 
         double cost = newCaffe.calculateCost();
 
