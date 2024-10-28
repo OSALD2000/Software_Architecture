@@ -28,6 +28,9 @@ public enum DB implements DatabaseAPI
     @Override
     public synchronized void saveNewAlter(int alter)
     {
-        this.alter = alter;
+        if (this.alter <  alter)
+        {
+            this.alter = alter;
+        }
     }
 }

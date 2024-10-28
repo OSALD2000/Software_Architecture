@@ -38,13 +38,12 @@ public class Main extends Thread
         List<Main> workers = new ArrayList<>()
         {
             {
-                add(new Main("worker1", 0));
-                add(new Main("worker2", 5));
-                add(new Main("worker3", 10));
-                add(new Main("worker4", 20));
-                add(new Main("worker5", 30));
-                add(new Main("worker6", 40));
-                add(new Main("worker7", 50));
+                add(new Main("worker1", 1));
+                add(new Main("worker2", 2));
+                add(new Main("worker3", 3));
+                add(new Main("worker4", 4));
+                add(new Main("worker5", 5));
+                add(new Main("worker6", 6));
             }
         };
 
