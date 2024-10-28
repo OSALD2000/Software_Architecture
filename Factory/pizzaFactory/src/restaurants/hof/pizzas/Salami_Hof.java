@@ -6,6 +6,6 @@ public class Salami_Hof extends Pizza
 {
     public Salami_Hof()
     {
-        super("Diavolo_Hof", 11.4);
+        super("Salami_Hof", 11.4);
     }
 }

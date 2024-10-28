@@ -6,6 +6,6 @@ public class FDI_Hof extends Pizza
 {
     public FDI_Hof()
     {
-        super("Diavolo_Hof", 10.4);
+        super("FDI_Hof", 10.4);
     }
 }
