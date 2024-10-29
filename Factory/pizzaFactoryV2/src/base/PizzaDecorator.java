@@ -10,6 +10,12 @@ public abstract class PizzaDecorator extends Pizza
         }
 
         @Override
+        public String getType()
+        {
+            return decoratedPizza.getType();
+        }
+        
+        @Override
         public String getDescription()
         {
             return decoratedPizza.getDescription();

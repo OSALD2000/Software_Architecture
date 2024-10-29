@@ -28,11 +28,8 @@ public abstract class Pizza
     public Pizza addTopping(Class<? extends PizzaDecorator> topping)
     {
         try {
-            Constructor<? extends PizzaDecorator> constructor = topping.getDeclaredConstructor();
-            PizzaDecorator decorator = constructor.newInstance();
-            decorator.decoratedPizza = this;
-
-            return decorator;
+            Constructor<? extends PizzaDecorator> constructor = topping.getDeclaredConstructor(Pizza.class);
+            return constructor.newInstance(this);
         }
         catch (Exception e)
         {
