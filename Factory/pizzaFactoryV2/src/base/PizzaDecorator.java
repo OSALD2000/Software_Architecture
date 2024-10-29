@@ -1,6 +1,6 @@
 package pizzaFactoryV2.src.base;
 
-public abstract class PizzaDecorator implements Pizza
+public abstract class PizzaDecorator extends Pizza
 {
         protected Pizza decoratedPizza;
 

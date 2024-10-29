@@ -1,5 +1,9 @@
 package pizzaFactoryV2.src.base;
 
+import starbucksWWS.base.Decorator;
+
+import java.lang.reflect.Constructor;
+
 public abstract class Pizza
 {
     public abstract String getDescription();
@@ -19,5 +23,20 @@ public abstract class Pizza
     public void back()
     {
         System.out.println("Backing the "+ getType());
+    }
+
+    public Pizza addTopping(Class<? extends PizzaDecorator> topping)
+    {
+        try {
+            Constructor<? extends PizzaDecorator> constructor = topping.getDeclaredConstructor();
+            PizzaDecorator decorator = constructor.newInstance();
+            decorator.decoratedPizza = this;
+
+            return decorator;
+        }
+        catch (Exception e)
+        {
+            throw new RuntimeException(e);
+        }
     }
 }
