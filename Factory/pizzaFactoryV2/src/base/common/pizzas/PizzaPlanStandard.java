@@ -1,24 +1,25 @@
 package pizzaFactoryV2.src.base.common.pizzas;
 
 import pizzaFactoryV2.src.base.Pizza;
+import pizzaFactoryV2.src.base.common.data.COMMON_PIZZA_SORT;
 
 public class PizzaPlanStandard extends Pizza
 {
     @Override
     public String getType()
     {
-        return "Plan Pizza";
+        return COMMON_PIZZA_SORT.PLAN_PIZZA.getSort();
     }
 
     @Override
     public String getDescription()
     {
-        return "Plan pizza";
+        return COMMON_PIZZA_SORT.PLAN_PIZZA.getDescription();
     }
 
     @Override
     public double cost()
     {
-        return 7.0;
+        return COMMON_PIZZA_SORT.PLAN_PIZZA.getCost();
     }
 }

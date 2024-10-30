@@ -1,24 +1,25 @@
 package pizzaFactoryV2.src.base.common.pizzas;
 
 import pizzaFactoryV2.src.base.Pizza;
+import pizzaFactoryV2.src.base.common.data.COMMON_PIZZA_SORT;
 
 public class PizzaDiavoloStandard extends Pizza
 {
     @Override
     public String getType()
     {
-        return "Diavolo Pizza";
+        return COMMON_PIZZA_SORT.DIAVOLO_PIZZA.getSort();
     }
 
     @Override
     public String getDescription()
     {
-        return "Diavolo pizza";
+        return COMMON_PIZZA_SORT.DIAVOLO_PIZZA.getDescription();
     }
 
     @Override
     public double cost()
     {
-        return 10.0;
+        return COMMON_PIZZA_SORT.DIAVOLO_PIZZA.getCost();
     }
 }
