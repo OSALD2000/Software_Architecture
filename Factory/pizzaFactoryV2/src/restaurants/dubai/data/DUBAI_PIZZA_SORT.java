@@ -2,7 +2,7 @@ package pizzaFactoryV2.src.restaurants.dubai.data;
 
 public enum DUBAI_PIZZA_SORT
 {
-    SALAMI_PIZZA_DUBAI("Salami Pizza Dubai","Salami pizza Hof with Halal Salami", 7.0);
+    SALAMI_PIZZA_DUBAI("Salami Pizza Dubai","Salami pizza Dubai with Halal Salami", 7.0);
 
     private final String sort;
     private final String description;
