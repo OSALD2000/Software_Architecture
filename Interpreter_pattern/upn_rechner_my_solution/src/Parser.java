@@ -154,9 +154,9 @@ public class Parser
         else if (zwischenSpeicher == '-')
         {
             _parse(stack, '0', tokens, idx);
-            Expression first_operand = stack.removeLast();
             Expression second_operand = stack.removeLast();
-            stack.add(new SubtractionExpression(second_operand, first_operand));
+            Expression first_operand = stack.removeLast();
+            stack.add(new SubtractionExpression(first_operand ,second_operand));
         }
     }
 }
