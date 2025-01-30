@@ -1,7 +1,8 @@
 
 public class PoM implements Container {
     private MovieCharacter characters[] = new MovieCharacter[8];
-    private int index = 0;
+    private Iterator itr;
+
 
     PoM()
     {
@@ -13,6 +14,8 @@ public class PoM implements Container {
         characters[5] = new MovieCharacter("King Julian");
         characters[6] = new MovieCharacter("Maurice");
         characters[7] = new MovieCharacter("Marlene");
+
+        this.itr = new PoMIterator(characters);
     }
 
     public MovieCharacter[] getActors() {return characters;}
@@ -20,6 +23,6 @@ public class PoM implements Container {
     @Override
     public Iterator getIterator()
     {
-        return null;
+        return itr;
     }
 }
